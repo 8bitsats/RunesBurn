@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burn Token Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@solana/wallet-adapter-wallets@0.8.0/dist/cdn.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@solana/web3.js@1.35.0"></script>
+</head>
+<body class="bg-gray-800 text-white">
+    <div class="container mx-auto px-4">
+        <h1 class="text-center text-3xl font-bold pt-10">Burn Your SPL Token</h1>
+        <div id="wallet-container" class="text-center my-4">
+            <!-- Wallet Connect Button -->
+        </div>
+        <div id="game-container" class="text-center my-4 hidden">
+            <!-- Game Interface -->
+            <button id="burn-button" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                Burn Token
+            </button>
+        </div>
+    </div>
+
+    <script src="wallet.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
